@@ -2,7 +2,6 @@
 #define __DEMO1_H__
 
 #include <iostream>
-#include <format>
 
 namespace demo1
 {
@@ -22,14 +21,13 @@ namespace demo1
     A foo()
     {
         std::string str = "Hello world......................................";
-        std::cout << std::format("{}: {}\n", (void*)str.c_str(), str.c_str());
+
         return str;
     }
     void run()
     {
         A a = foo();
         puts("====");
-        std::cout << std::format("{}: {}\n", (void*)a.str.c_str(), a.str.c_str());
     }
 }
 
